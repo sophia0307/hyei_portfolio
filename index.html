@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김지혜 포트폴리오</title>
+  <!-- meta -->
+  <meta property="og:title" content="김지혜 포트폴리오">
+  <meta property="og:description" content="Welcome jihye Portfolio">
+  <meta property="og:image" content="logo.svg">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon_1.ico" type="image/x-icon">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/24d65783f5.js" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- javascript library -->
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <!-- custom css -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- nav -->
+  <nav id="navbar">
+    <!-- logo -->
+    <div class="navbar__logo">
+      <a href="index.html">SILVIA</a>
+    </div>
+
+    <!-- menu -->
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item active" data-link="#home">Home</li>
+      <li class="navbar__menu__item" data-link="#about">About</li>
+      <li class="navbar__menu__item" data-link="#skills">Skills</li>
+      <li class="navbar__menu__item" data-link="#project">Project</li>
+      <li class="navbar__menu__item" data-link="#contact">Contact</li>
+    </ul>
+
+    <!-- toggle button -->
+    <button class="navbar__toggle-btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- home -->
+  <section id="home" data-scroll>
+    <div class="home_container">
+      <!-- profile img -->
+      <img src="/images/profile.png" alt="silvia profile photo" class="home__profile">
+      <!-- home title -->
+      <h1 class="home__title">Hello,<br>Web Front-End Developer Portfolio</h1>
+      <!-- home description -->
+      <h2 class="home__description">안녕하세요, 신입개발자 김지혜입니다.</h2>
+      <!-- contact button -->
+      <button class="home__contact" data-link="#contact">CONTACT ME</button>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section id="about" class="section section__container" data-scroll>
+    <!-- about title -->
+    <h2 class="section__title">About ME</h2>
+    <!-- about description -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Corporis, sunt iusto. Vel amet dolores facilis voluptatibus.
+      Eos incidunt architecto laborum laudantium!
+      Quis accusantium odio molestiae totam qui doloremque facilis quaerat.
+    </p>
+    <!-- about introduction -->
+    <div class="about__introductions">
+      <div class="introduction">
+        <div class="introduction__icon">
+          <i class="fa-regular fa-lightbulb"></i>
+        </div>
+        <h3 class="introduction__title"># 메타인지</h3>
+        <p>
+          내가 아는 것과 안다고 착각하는 것을 파악하고<br>
+          나 자신을 정확하게 보기 위해 노력하고 있습니다.
+        </p>
+      </div>
+      <div class="introduction">
+        <div class="introduction__icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <h3 class="introduction__title"># 해결사</h3>
+        <p>
+          프로젝트를 수행하다 모르는 내용을 맞닥뜨렸을 때<br>
+          해결 방안을 찾는 문제 해결 능력을 키워가고 있습니다. 
+        </p>
+      </div>
+      <div class="introduction">
+        <div class="introduction__icon">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h3 class="introduction__title"># My Dream</h3>
+        <p>
+          개발자가 되고 싶은 이유는 내가 참여한 프로젝트가 세상의 빛을 보는 것.<br>
+          그것을 통해 내가 성장하는 모습을 보고 행복감을 느끼고 싶습니다.
+        </p>
+      </div>
+    </div>
+    
+
+    <!-- about career -->
+    <div class="about__career">
+      <!-- 교육과정 수료 -->
+      <h3 class="career__record">
+        <i class="fa-solid fa-graduation-cap"></i> Education
+      </h3>
+      <div class="career">
+        <img src="/images/ezen.png" alt="이젠아카데미컴퓨터학원" class="career__logo">
+        <div class="career__description">
+          <p class="career__name">이젠아카데미컴퓨터학원 <span>- 자연언어 이해 인공지능 전문 인력(AI 학습 엔진 구축과 활용) 수료</span></p>
+          <p class="career__period">2021.12.29 ~ 2022.6.24</p>
+        </div>
+      </div>
+      <div class="career">
+        <img src="/images/himedia.jpg" alt="하이미디어아카데미" class="career__logo">
+        <div class="career__description">
+          <p class="career__name">하이미디어아카데미 <span>- 디지털디자인(웹디자인/퍼블리셔) 수료</span></p>
+          <p class="career__period">2018.02.26 ~ 2018.08.09</p>
+        </div>
+      </div>
+      <!-- 경력 -->
+      <h3 class="career__record">
+        <i class="fa-solid fa-building"></i> Experience
+      </h3>
+      <div class="career">
+        <img src="/images/hanspm.png" alt="한스피엠" class="career__logo">
+        <div class="career__description">
+          <p class="career__name">한스피엠 - 웹퍼블리셔</p>
+          <p class="career__period">2019.01.15 ~ 2020.05.09</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills -->
+  <section id="skills" class="section" data-scroll>
+    <div class="section__container">
+      <!-- skill title -->
+      <h2 class="section__title">Skills</h2>
+      <!-- skill description -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Corporis, sunt iusto. Vel amet dolores facilis voluptatibus.
+        Eos incidunt architecto laborum laudantium!
+        Quis accusantium odio molestiae totam qui doloremque facilis quaerat.
+      </p>
+      <!-- skill box -->
+      <div class="skill__set">
+        <div class="skill__set__left">
+          <h3 class="skill__set__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML5</span>
+              <span>90%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:90%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>CSS3</span>
+              <span>90%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:90%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:80%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>Python</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:80%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill__set__right">
+          <h3 class="skill__set__title">Tools</h3>
+          <p>
+            Visual Studio Code<br>
+            Pycharm<br>
+            Github
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- project -->
+  <section id="project" class="section" data-scroll>
+    <div class="section__container">
+      <!-- project title -->
+      <h2 class="section__title">Projects</h2>
+      <!-- project category -->
+      <ul class="project__category">
+        <li class="project__category__menu active">
+          <a>
+            ALL
+            <span class="project__category__count">4</span>
+          </a>
+        </li>
+        <li class="project__category__menu">
+          <a>
+            HTML5+CSS3
+            <span class="project__category__count">4</span>
+          </a>
+        </li>
+        <li class="project__category__menu">
+          <a>
+            JavaScript
+            <span class="project__category__count">4</span>
+          </a>
+        </li>
+        <li class="project__category__menu">
+          <a>
+            Python
+            <span class="project__category__count">4</span>
+          </a>
+        </li>
+      </ul>
+      <!-- project item -->
+      <div class="project__item__container">
+        <a href="#" class="project__item" target="_blank">
+          <img src="/images/macbook.png" alt="Project Img" class="project__img">
+          <div class="project__description">
+            <h3 class="project__title">클론코딩</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+              Facere molestiae veritatis expedita iure doloribus?<br>
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="project__item" target="_blank">
+          <img src="/images/macbook.png" alt="Project Img" class="project__img">
+          <div class="project__description">
+            <h3 class="project__title">클론코딩</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+              Facere molestiae veritatis expedita iure doloribus?<br>
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="project__item" target="_blank">
+          <img src="/images/macbook.png" alt="Project Img" class="project__img">
+          <div class="project__description">
+            <h3 class="project__title">클론코딩</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+              Facere molestiae veritatis expedita iure doloribus?<br>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact" class="section" data-scroll>
+    <div class="section__container">
+      <!-- contact title -->
+      <h2 class="section__title">Let's Talk</h2>
+      <!-- contact list -->
+      <ul class="contact__list">
+        <li>kim199203@naver.com</li> <!-- email -->
+        <li>
+          <a href="#" class="contact__link"><i class="fa-brands fa-github"></i> Github</a> <!-- github url -->
+        </li>
+        <li>010-7377-5641</li> <!-- phone -->
+      </ul>
+      <!-- copyright -->
+      <p class="copy">&copy; 2022 silvia_Kim jihye - All rights reserved</p>
+    </div>
+  </section>
+
+  <!-- Arrow up -->
+  <button class="arrow-up">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- custom js -->
+  <script src="/main.js"></script>
+  
+  <!-- scroll library -->
+  <script>
+    ScrollOut();
+  </script>
+</body>
+</html>

@@ -1,0 +1,581 @@
+/* Global */
+/* 가상클래스를 이용하여 유지보수를 쉽게 할 수 있다. */
+:root {
+  /* color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-black: #000000;
+  --color-light-purple: #c7a1fc;
+  --color-dark-purple: #836aa6;
+  --color-blue: #1903a6;
+  --color-dark-blue: #1d0259;
+  /* --color-pu: rgb(199, 161, 252); */
+
+  /* font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 500;
+  --weight-regular: 400;
+
+  /* border */
+  --size-border-radius: 4px;
+}
+
+/* Universal tags */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+}
+
+/* scroll */
+[data-scroll] {
+  opacity: 0;
+  transition: opacity 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}
+
+/* nav */
+#navbar {
+  width: 100%;
+  padding: 16px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  transition: all 0.3s ease-in-out
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-dark-purple);
+  padding: 10px;
+}
+
+.navbar__logo {
+  flex: none;
+}
+
+.navbar__logo > a {
+  display: block;
+  padding-left: 40px;
+  background: url(/images/logo.svg) no-repeat 5px/contain;
+  color: var(--color-white);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu {
+  margin-left: auto;
+  display: flex;
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+  color: var(--color-white);
+  cursor: pointer;
+  font-weight: var(--weight-semi-bold);
+  border: 1px solid transparent;
+  border-radius: var(--size-border-radius);
+  transition: all 0.3s;
+}
+
+.navbar__menu__item:hover,
+.navbar__menu__item.active {
+  border-color: var(--color-white);
+  background-color: #b58ded;
+}
+
+.navbar__toggle-btn{
+  border:none;
+  background-color: transparent;
+  color: var(--color-white);
+  font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+  position:absolute;
+  right: 32px;
+  top: 20px;
+  display: none;
+}
+
+/* home */
+#home {
+  width: 100%;
+  padding: 100px 40px 40px;
+  background: url(/images/home_bg.png) no-repeat bottom;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.home__profile {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--color-white);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__title {
+  font-size: 40px;
+}
+
+.home__contact {
+  padding: 8px 12px;
+  margin: 20px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.home__contact:hover {
+  background-color: var(--color-dark-purple);
+}
+
+/* section */
+/*about, skiils, project, contact 공통적으로 쓰임*/
+.section {
+  padding: 50px;
+  text-align: center;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section__title {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0;
+}
+
+/* about */
+.about__introductions {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+.introduction{
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.introduction__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 160px;
+  font-size: 70px;
+  margin: auto;
+  margin-bottom: 16px;
+  color: var(--color-dark-purple);
+  border: 1px solid var(--color-dark-purple);
+  border-radius: 50%;
+}
+
+.introduction__icon i {
+  transition: all 0.3s ease;
+}
+
+.introduction__icon:hover i {
+  color: var(--color-blue);
+  transform: scale(1.2);
+}
+
+.introduction__title {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-dark-grey);
+}
+
+.introduction p {
+  font-size: var(--font-small);
+  color: var(--color-grey);
+  padding: 10px;
+  word-break: keep-all;
+}
+
+.career__record {
+  text-align: left;
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-dark-grey);
+}
+
+.career__record:nth-child(even) {
+  margin-top: 20px;
+}
+
+.career {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.career__logo {
+  width: 100px;
+  height: auto;
+}
+
+.career__description {
+  margin: 0 20px;
+  text-align: left;
+}
+
+.career__name,
+.career__period {
+  font-size: var(--font-small);
+  color: var(--color-light-grey)
+}
+
+/* skills */
+#skills {
+  background-color: var(--color-light-purple);
+}
+
+.skill__set {
+  margin: 20px 0;
+  background-color: var(--color-dark-grey);
+  display: flex;
+}
+
+.skill__set__left {
+  flex-basis: 60%;
+  padding: 20px;
+}
+
+.skill__set__right {
+  flex-basis: 40%;
+  padding: 20px;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+}
+
+.skill__set__title {
+  color: var(--color-light-white);
+  font-weight: var(--weight-semi-bold);
+}
+
+.skill {
+  margin: 0 20px 32px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-light-white);
+  margin-bottom: 5px;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-light-grey);
+}
+
+.skill__value {
+  height: 100%;
+  background-color: orange;
+}
+
+.skill__set p {
+  margin-top: 10px;
+  color: var(--color-light-white);
+}
+
+/* project */
+.project__category {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.project__category__menu {
+  margin: auto;
+}
+
+.project__category__menu > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 14px 50px;
+  border: 1px solid var(--color-light-grey);
+  border-radius: var(--size-border-radius);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.project__category__count {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 20px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: transparent;
+  transition: all 0.3s;
+  position: absolute;
+  top: -50px;
+  text-align: center;
+}
+
+.project__category__menu>a:hover,
+.project__category__menu.active a {
+  background-color: var(--color-blue);
+  color: var(--color-white)
+}
+
+.project__category__menu>a:hover .project__category__count,
+.project__category__menu.active .project__category__count {
+  background-color: var(--color-light-purple);
+  color: var(--color-black);
+  top: 15px;
+  font-weight: var(--weight-semi-bold);
+}
+
+.project__item__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.project__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 2px;
+  background-color: var(--color-light-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.project__img {
+  max-width: 100%;
+  max-height: 100%;
+  align-self: center;
+}
+
+.project__description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  text-align: center;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in;
+}
+
+.project__item:hover .project__description {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project__title {
+  color: orange;
+  font-weight: var(--weight-semi-bold);
+}
+
+.project__description p {
+  margin-top: 10px;
+  color: var(--color-white);
+}
+
+/* contact */
+#contact {
+  background-color: var(--color-dark-blue);
+}
+
+#contact .section__title {
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.contact__list li,
+.contact__list li .contact__link {
+  margin: 20px;
+  font-size: var(--font-medium);
+  color: var(--color-white);
+}
+
+.copy {
+  font-size: var(--font-micro);
+  color: var(--color-light-white);
+}
+
+/* arrow-up */
+.arrow-up {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  background-color: var(--color-dark-blue);
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  opacity: 0;
+  border-color: transparent;
+  transition: opacity 0.3s ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Media Query */
+@media screen and (max-width:768px) {
+  /* nav */
+  #navbar,
+  .navbar__menu {
+    flex-direction: column;
+    background-color: var(--color-dark-purple) ;
+  }
+
+  .navbar__menu{
+    margin: 10px 0;
+    text-align: center;
+    display: none;
+  }
+  .navbar__menu.active{
+    display: block;
+  }
+  .navbar__menu__item:hover,
+  .navbar__menu__item.active{
+    border-color: transparent;
+  }
+
+  .navbar__toggle-btn{
+    display: block;
+  }
+
+  #navbar.navbar--dark {
+    background-color: var(--color-dark-purple);
+    padding: 16px;
+  }
+  
+  /* font-size : medium으로 수정 */
+  .home__title,
+  .section__title{
+    font-size: var(--font-medium);
+  }
+
+  /* font-size :  regular으로 수정*/
+  .navbar__logo > a,
+  .home__description,
+  .major__title,
+  .contact__list li{
+    font-size: var(--font-regular);
+  }
+
+  /* about */
+  .about__introductions{
+    flex-direction: column;
+  }
+
+  .career__name span{
+    display: none;
+  }
+
+  /* skills */
+  .skill__set{
+    flex-direction: column;
+  }
+  /* project */
+  .project__category{
+    display: none;
+  }
+}
