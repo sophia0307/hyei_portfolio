@@ -562,13 +562,14 @@ p {
   #navbar,
   .navbar__menu {
     flex-direction: column;
-    background-color: var(--color-dark-purple) ;
+    background-color: var(--color-black) ;
   }
 
   .navbar__menu{
     margin: 10px 0;
     text-align: center;
     display: none;
+    transition: all .6s;
   }
   .navbar__menu.active{
     display: block;
@@ -583,7 +584,7 @@ p {
   }
 
   #navbar.navbar--dark {
-    background-color: var(--color-dark-purple);
+    background-color: var(--color-black);
     padding: 16px;
   }
   
@@ -601,6 +602,34 @@ p {
     font-size: var(--font-regular);
   }
 
+  /* home */
+  #home{
+    height: calc(100vh-20px);
+  }
+  
+  .home_container{
+    width: 90%;
+  }
+
+  .home__title {
+    font-size: 70px;
+  }
+
+  .home__title span{
+    display: block;
+    width: 100%;
+    line-height: inherit;
+  }
+
+  .home__contact{
+    font-size: var(--font-regular);
+  }
+
+  .home__title span.title_left,
+  .home__title span.title_right,
+  .home__description{
+    text-align: center;
+  }
   /* about */
   .about__introductions{
     flex-direction: column;
