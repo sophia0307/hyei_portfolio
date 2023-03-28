@@ -332,57 +332,25 @@ p {
 
 /* skills */
 #skills {
-  background-color: var(--color-light-gray);
+  background-color: #ddd;
 }
 
-.skill__set {
-  margin: 20px 0;
-  background-color: var(--color-dark-grey);
-  display: flex;
+.skill_list {
+  margin: 32px 20px;
+  text-align: left;
 }
 
-.skill__set__left {
-  flex-basis: 60%;
-  padding: 20px;
+.skill_list > dt{
+  font-weight: var(--weight-bold);
+  font-size: var(--font-medium);
 }
-
-.skill__set__right {
-  flex-basis: 40%;
-  padding: 20px;
-  background-color: var(--color-light-grey);
-  color: var(--color-light-white);
+.skill_list > dd{
+  padding-left: 30px;
+  /* padding-bottom: 20px; */
 }
-
-.skill__set__title {
-  color: var(--color-light-white);
-  font-weight: var(--weight-semi-bold);
-}
-
-.skill {
-  margin: 0 20px 32px;
-}
-
-.skill__description {
-  display: flex;
-  justify-content: space-between;
-  color: var(--color-light-white);
-  margin-bottom: 5px;
-}
-
-.skill__bar {
-  width: 100%;
-  height: 3px;
-  background-color: var(--color-light-grey);
-}
-
-.skill__value {
-  height: 100%;
-  background-color: orange;
-}
-
-.skill__set p {
-  margin-top: 10px;
-  color: var(--color-light-white);
+.skill_list > dd > ul li{
+  list-style-type: disc;
+  padding-bottom: 16px;
 }
 
 /* project */
@@ -442,6 +410,7 @@ p {
 }
 
 .project__item__container {
+  margin-top:32px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -456,6 +425,7 @@ p {
   width: 300px;
   height: 300px;
   margin: 2px;
+  padding: 15px;
   background-color: var(--color-light-white);
   position: relative;
   overflow: hidden;
@@ -497,6 +467,37 @@ p {
 .project__description p {
   margin-top: 10px;
   color: var(--color-white);
+}
+
+.project__description .btns{
+  margin-top: 15px;
+}
+
+.project__description .btns .link_btn{
+  border: 1px solid var(--color-white);
+  border-radius : 4px;
+  padding: 8px 12px;
+  color: var(--color-white);
+  font-weight: var(--weight-semi-bold);
+  transition: all 0.3s;
+}
+
+.project__description .btns .link_btn:hover{
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.project__description .btns .link_btn:hover > i{
+  transform: translateX(5px);
+}
+
+.project__description .btns .link_btn.git_link{
+  margin-right: 10px;
+}
+
+.project__description .btns .link_btn > i{
+  margin-right: 7px;
+  transition: all 0.3s;
 }
 
 /* contact */

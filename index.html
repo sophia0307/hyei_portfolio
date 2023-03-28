@@ -142,67 +142,50 @@
   </section>
 
   <!-- skills -->
-  <section id="skills" class="section" data-scroll>
-    <div class="section__container">
+  <section id="skills" data-scroll>
+    <div class="section section__container">
       <!-- skill title -->
       <h2 class="section__title">Skills</h2>
-      <!-- skill description -->
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Corporis, sunt iusto. Vel amet dolores facilis voluptatibus.
-        Eos incidunt architecto laborum laudantium!
-        Quis accusantium odio molestiae totam qui doloremque facilis quaerat.
-      </p>
-      <!-- skill box -->
-      <div class="skill__set">
-        <div class="skill__set__left">
-          <h3 class="skill__set__title">Skills</h3>
-          <div class="skill">
-            <div class="skill__description">
-              <span>HTML5</span>
-              <span>90%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width:90%;"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>CSS3</span>
-              <span>90%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width:90%;"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>JavaScript</span>
-              <span>80%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width:80%;"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>Python</span>
-              <span>80%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width:80%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="skill__set__right">
-          <h3 class="skill__set__title">Tools</h3>
-          <p>
-            Visual Studio Code<br>
-            Pycharm<br>
-            Github
-          </p>
-        </div>
-      </div>
+      <!-- skill list -->
+      <dl class="skill_list">
+        <dt><h3 class="skill_name">HTML5 & CSS3</h3></dt>
+        <dd>
+          <ul>
+            <li>기획서나 디자인을 보고 그 문서들이 전체적으로 무엇을 전달하고자 하는 문서인지 각 문서의 구성 요소들이 어떤 의미가 있고 어떤 맥락에서 쓰인 것인지를 해석 및 판단하여 유지보수 작업이 간편할 수 있도록 작업 할 수 있습니다.</li>
+            <li>웹 표준, 웹 접근성, 크로스 브라우징, 시멘틱 마크업의 원칙을 준수합니다.</li>
+            <li>Web, Mobile 등 사용자가 사용하는 화면에 맞게 반응형 사이트를 제작할 수 있습니다.</li>
+            <li>Flex, Grid를 이용한 레이아웃을 할 수 있습니다.</li>
+          </ul>
+        </dd>
+
+        <dt><h3 class="skill_name">Javascript</h3></dt>
+        <dd>
+          <ul>
+            <li>nav menu, scroll 제어, 이미지 슬라이드 등 간단한 DOM, BOM 조작 하여 할 수 있습니다.</li>
+          </ul>
+        </dd>
+
+        <dt><h3 class="skill_name">Bootstrap</h3></dt>
+        <dd>
+          <ul>
+            <li>Bootstrap을 이용하여 반응형 사이트, 대시보드를 제작한 경험이 있습니다.</li>
+          </ul>
+        </dd>
+
+        <dt><h3 class="skill_name">Python</h3></dt>
+        <dd>
+          <ul>
+            <li>BeautifulSoup, requests를 이용한 웹 스크래핑을 할 수 있습니다.</li>
+          </ul>
+        </dd>
+
+        <dt><h3 class="skill_name">Photoshop & Illustration</h3></dt>
+        <dd>
+          <ul>
+            <li>간단한 이미지 편집이나 웹페이지 디자인 가이드를 제작할 수 있습니다.</li>
+          </ul>
+        </dd>
+      </dl>
     </div>
   </section>
 
@@ -214,38 +197,52 @@
       
       <!-- project item -->
       <div class="project__item__container">
-        <a href="#" class="project__item" target="_blank">
+        <!-- enterprise -->
+        <div class="project__item" >
           <img src="/images/macbook.png" alt="Project Img" class="project__img">
           <div class="project__description">
-            <h3 class="project__title">클론코딩</h3>
+            <h3 class="project__title">기업형 사이트</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-              Facere molestiae veritatis expedita iure doloribus?<br>
+              기업형 반응형 웹 데모 사이트입니다.<br>
             </p>
+            <div class="btns">
+              <a href="https://github.com/sophia0307/enterprise_construction" class="link_btn git_link" target="_blank"><i class="fa-solid fa-arrow-right"></i> Github</a>
+              <a href="https://enterpriseconstrucstiondemo.netlify.app/" class="link_btn demo_link" target="_blank"><i class="fa-solid fa-arrow-right"></i> Demo</a>
+            </div>
           </div>
-        </a>
+        </div>
+        
+        <!-- plantsstore -->
+        <div class="project__item" >
+          <img src="/images/macbook.png" alt="Project Img" class="project__img">
+          <div class="project__description">
+            <h3 class="project__title">식물 쇼핑몰</h3>
+            <p>
+              Bootstrap을 이용한 식물 쇼핑몰 반응형 사이트입니다.<br>
+            </p>
+            <div class="btns">
+              <a href="https://github.com/sophia0307/Plants_Store_Site" class="link_btn git_link" target="_blank"><i class="fa-solid fa-arrow-right"></i> Github</a>
+              <a href="https://kimjihye37.github.io/Plant_Store_site/" class="link_btn demo_link" target="_blank"><i class="fa-solid fa-arrow-right"></i> Demo</a>
+            </div>
+          </div>
+        </div>
 
-        <a href="#" class="project__item" target="_blank">
+        <!-- harrypotter -->
+        <div class="project__item" >
           <img src="/images/macbook.png" alt="Project Img" class="project__img">
           <div class="project__description">
-            <h3 class="project__title">클론코딩</h3>
+            <h3 class="project__title">해리포터 팬사이트</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-              Facere molestiae veritatis expedita iure doloribus?<br>
+              해리포터 입문자들을 위한 등장인물과 영화에 대한 정보를 담은 반응형 웹 데모 사이트입니다.<br>
             </p>
+            <div class="btns">
+              <a href="https://github.com/sophia0307/Harry_Potter_Site" class="link_btn git_link" target="_blank"><i class="fa-solid fa-arrow-right"></i> Github</a>
+              <a href="https://harrypotterdemosite.netlify.app/" class="link_btn demo_link" target="_blank"><i class="fa-solid fa-arrow-right"></i> Demo</a>
+            </div>
           </div>
-        </a>
-
-        <a href="#" class="project__item" target="_blank">
-          <img src="/images/macbook.png" alt="Project Img" class="project__img">
-          <div class="project__description">
-            <h3 class="project__title">클론코딩</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-              Facere molestiae veritatis expedita iure doloribus?<br>
-            </p>
-          </div>
-        </a>
+        </div>
+        
+        
       </div>
     </div>
   </section>
