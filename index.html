@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>김지혜 포트폴리오</title>
+  <title>Hyei Portfolio | 김지혜 포트폴리오</title>
   <!-- meta -->
   <meta property="og:title" content="김지혜 포트폴리오">
-  <meta property="og:description" content="Welcome jihye Portfolio">
+  <meta property="og:description" content="Welcome Hyei Portfolio">
   <meta property="og:image" content="logo.svg">
   <!-- favicon -->
   <link rel="shortcut icon" href="./images/favicon_1.ico" type="image/x-icon">
@@ -29,7 +29,7 @@
   <nav id="navbar">
     <!-- logo -->
     <div class="navbar__logo">
-      <a href="index.html">SILVIA</a>
+      <a href="index.html">PORTFOLIO</a>
     </div>
 
     <!-- menu -->
@@ -50,12 +50,13 @@
   <!-- home -->
   <section id="home" data-scroll>
     <div class="home_container">
-      <!-- profile img -->
-      <img src="/images/profile.png" alt="silvia profile photo" class="home__profile">
       <!-- home title -->
-      <h1 class="home__title">Hello,<br>Web Front-End Developer Portfolio</h1>
+      <h1 class="home__title">
+        <span class="title_left">Hello</span>
+        <span class="title_right">World</span>
+      </h1>
       <!-- home description -->
-      <h2 class="home__description">안녕하세요, 신입개발자 김지혜입니다.</h2>
+      <h2 class="home__description">MY Name Is<br>KIM JIHYE</h2>
       <!-- contact button -->
       <button class="home__contact" data-link="#contact">CONTACT ME</button>
     </div>
@@ -66,42 +67,41 @@
     <!-- about title -->
     <h2 class="section__title">About ME</h2>
     <!-- about description -->
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Corporis, sunt iusto. Vel amet dolores facilis voluptatibus.
-      Eos incidunt architecto laborum laudantium!
-      Quis accusantium odio molestiae totam qui doloremque facilis quaerat.
+    <p class="about_description">
+      <strong>중요한 것은 목표를 이루는 것이 아니라, 그 과정에서 무엇을 배우며 얼마나 성장하느냐이다.<br> - 앤드류 매튜스 -</strong><br>
+      저의 노력은 무언가를 꼭 쟁취하기 위한 수단이라기보다 그 자체가 의미 있는 성장의 과정이라고 생각합니다.<br>
+      무엇이든 적극적으로 배우려는 의지가 높아 능동적으로 업무를 수행하려고 합니다.
     </p>
     <!-- about introduction -->
     <div class="about__introductions">
       <div class="introduction">
         <div class="introduction__icon">
+          <i class="fa-solid fa-arrow-up-right-dots"></i>
+        </div>
+        <h3 class="introduction__title"># 성장지향성</h3>
+        <p>
+          지속적으로 성장하기 위해 <br>
+          끊임없이 배우고 노력하고 있습니다.
+        </p>
+      </div>
+      <div class="introduction">
+        <div class="introduction__icon">
           <i class="fa-regular fa-lightbulb"></i>
         </div>
-        <h3 class="introduction__title"># 메타인지</h3>
+        <h3 class="introduction__title"># 창의성</h3>
         <p>
-          내가 아는 것과 안다고 착각하는 것을 파악하고<br>
-          나 자신을 정확하게 보기 위해 노력하고 있습니다.
+          새로운 것을 생각할 때마다 <br>
+          두근두근합니다.
         </p>
       </div>
       <div class="introduction">
         <div class="introduction__icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-regular fa-face-smile"></i>
         </div>
-        <h3 class="introduction__title"># 해결사</h3>
+        <h3 class="introduction__title"># 적응력</h3>
         <p>
-          프로젝트를 수행하다 모르는 내용을 맞닥뜨렸을 때<br>
-          해결 방안을 찾는 문제 해결 능력을 키워가고 있습니다. 
-        </p>
-      </div>
-      <div class="introduction">
-        <div class="introduction__icon">
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <h3 class="introduction__title"># My Dream</h3>
-        <p>
-          개발자가 되고 싶은 이유는 내가 참여한 프로젝트가 세상의 빛을 보는 것.<br>
-          그것을 통해 내가 성장하는 모습을 보고 행복감을 느끼고 싶습니다.
+          다양한 경험으로 새로운 환경에 대한<br>
+          빠른 적응력과 습득 능력을 갖추었습니다.
         </p>
       </div>
     </div>
@@ -211,33 +211,7 @@
     <div class="section__container">
       <!-- project title -->
       <h2 class="section__title">Projects</h2>
-      <!-- project category -->
-      <ul class="project__category">
-        <li class="project__category__menu active">
-          <a>
-            ALL
-            <span class="project__category__count">4</span>
-          </a>
-        </li>
-        <li class="project__category__menu">
-          <a>
-            HTML5+CSS3
-            <span class="project__category__count">4</span>
-          </a>
-        </li>
-        <li class="project__category__menu">
-          <a>
-            JavaScript
-            <span class="project__category__count">4</span>
-          </a>
-        </li>
-        <li class="project__category__menu">
-          <a>
-            Python
-            <span class="project__category__count">4</span>
-          </a>
-        </li>
-      </ul>
+      
       <!-- project item -->
       <div class="project__item__container">
         <a href="#" class="project__item" target="_blank">
@@ -285,14 +259,20 @@
       <ul class="contact__list">
         <li>kim199203@naver.com</li> <!-- email -->
         <li>
-          <a href="#" class="contact__link"><i class="fa-brands fa-github"></i> Github</a> <!-- github url -->
+          <a href="https://github.com/sophia0307" class="contact__link">
+            <i class="fa-brands fa-github"></i> Github
+          </a> <!-- github url -->
         </li>
         <li>010-7377-5641</li> <!-- phone -->
       </ul>
-      <!-- copyright -->
-      <p class="copy">&copy; 2022 silvia_Kim jihye - All rights reserved</p>
     </div>
   </section>
+
+  <!-- footer -->
+  <footer class="footer">
+     <!-- copyright -->
+     <p class="copy">&copy; 2023 Hyei - All rights reserved</p>
+  </footer>
 
   <!-- Arrow up -->
   <button class="arrow-up">
